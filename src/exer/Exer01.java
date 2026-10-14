@@ -11,15 +11,16 @@ public class Exer01 {
 		//입력된 sc 값은 무조건 String으로 저장
 		
 		try {
-		
 			if(Integer.parseInt(sc.nextLine()) >= 20) {
 				System.out.println("당신은 성인입니다");
 			} else {
 				System.out.println("당신은 미성년입니다");
 			}
-		} catch (Exception e) {
-			System.out.println("나이는 숫자만 입력하세요.");
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
 		
 		
 		
